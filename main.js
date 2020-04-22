@@ -5,7 +5,10 @@ const express = require("express"),
     app = express();
 app.set("port", process.env.PORT || 3000);
 const homeController = require("./controllers/homeController");
+const layouts = require("express-ejs-layouts");
 
+app.set("view engine", "ejs");
+app.use(layouts);
 app.use(
     express.urlencoded({extended: false})
 );
