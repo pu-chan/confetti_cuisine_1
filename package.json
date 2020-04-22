@@ -1,0 +1,27 @@
+{
+  "name": "confetti_cuisine_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pu-chan/confetti_cuisine_1.git"
+  },
+  "author": "pu-chan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pu-chan/confetti_cuisine_1/issues"
+  },
+  "homepage": "https://github.com/pu-chan/confetti_cuisine_1#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "http-status-codes": "^1.4.0"
+  }
+}
