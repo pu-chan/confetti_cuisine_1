@@ -9,6 +9,7 @@ const layouts = require("express-ejs-layouts");
 
 app.set("view engine", "ejs");
 app.use(layouts);
+app.use(express.static("public"));
 app.use(
     express.urlencoded({extended: false})
 );
