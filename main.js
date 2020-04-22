@@ -4,6 +4,8 @@
 const express = require("express"),
     app = express();
 app.set("port", process.env.PORT || 3000);
+const homeController = require("./controllers/homeController");
+
 app.use(
     express.urlencoded({extended: false})
 );
@@ -13,6 +15,9 @@ app.use(express.json());
 app.get("/", (req, res) => {
     res.send("Welcome to Confetti Cuisine!");
 });
+app.get("/courses", homeController.showCourses);
+app.get("/contact", homeController.showSignUp);
+app.post("/contact", homeController.postedSignUpForm);
 
 // アプリケーションがポート3000を監視
 app.listen(app.get("port"), () => {
