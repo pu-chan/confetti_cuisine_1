@@ -18,5 +18,17 @@ header {
 
 /* contact.ejs */
 #form {
-    margin-top: 50px;
+    margin-top: 20px;
+}
+
+/* error.ejs */
+.err_msg {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* thanks.ejs */
+.thanks_msg {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
