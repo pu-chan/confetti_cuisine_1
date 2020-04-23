@@ -1,0 +1,12 @@
+<div class="row">
+    <div id="image" class="col-8">
+        <img src="/images/pooh.jpg">
+    </div>
+    <div id="text" class="col-4">
+        <h1>Our Courses</h1>
+        <% offeredCourses.forEach(course => { %>
+            <h5><%= course.title %></h5>
+            <span>$ <%= course.cost %></span>
+        <% }); %>
+    </div>
+</div>

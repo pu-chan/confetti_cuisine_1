@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+img {
+    width: 850px;
+    height: auto;
+}
+
 /* layout.ejs */
 header {
     width: 100%;
